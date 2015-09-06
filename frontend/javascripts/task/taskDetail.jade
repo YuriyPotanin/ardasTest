@@ -1,0 +1,6 @@
+.panel.panel-default(ng-controller = 'taskDetailCtrl as taskDetail')
+	.panel-heading
+		h3.panel-title {{taskDetail.taskObj.name}}
+			a.btn.btn-default.btn-lg.active.col-xs-offset-10(href="#/" type="button" role="button") go to list
+	.panel-body
+		| {{taskDetail.taskObj.description}}
